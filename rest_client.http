@@ -1,0 +1,9 @@
+
+get http://localhost:5000/
+Content-Type: application/json
+
+{
+    "size": "300*300",
+    "data": "Hello World.",
+    "encoding": "utf-8"
+}
