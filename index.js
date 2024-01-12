@@ -5,7 +5,7 @@ const app = express()
 app.use(express.json())
 app.get("/", async (req, res) => {
     qrcode.toString("Hello World.", {type: "terminal"}, (err, url) => {
-        console.log(url)
+        res.send(url)
     })
     // const { size, data, encoding } = req.body
     // const url = `https://chart.googleapis.com/chart?chs=${size}&cht=qr&chl=${data}&choe=${encoding}`
